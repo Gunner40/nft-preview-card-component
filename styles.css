@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* resets  */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* custom variables */
+:root {
+  --primary-color-blue: hsl(215, 51%, 70%);
+  --primary-color-cyan: hsl(178, 100%, 50%);
+  --main-background-color: hsl(217, 54%, 11%);
+  --card-background-color: hsl(216, 50%, 16%);
+  --horizontal-line-color: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+/* basic styles  */
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: var(--primary-color-blue);
+}
+
+main {
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/* card styles  */
+.card {
+  width: 375px;
+  background-color: var(--card-background-color);
+  padding: 1.5em;
+  border-radius: 1em;
+}
+
+.card__heading {
+  font-size: 1.4em;
+  margin-block: 0.75em;
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.card__text {
+  color: var(--primary-color-blue);
+}
+
+.card__data {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 1em;
+}
+
+.card__data--left {
+  color: var(--primary-color-cyan);
+}
+
+.card__data--left,
+.card__data--right {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.card__data--left > svg,
+.card__data--right > svg {
+  margin-right: 0.4em;
+}
+
+hr {
+  color: inherit;
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.card__profile img {
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
+  margin-right: 1em;
+  width: 35px;
+}
+
+.card__profile__name {
+  color: var(--white-color);
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
